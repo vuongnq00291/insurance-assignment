@@ -1,0 +1,49 @@
+modules: 
+    -  name: "Bike"
+       code: "BIKE"
+       risk: 0.3
+       min: 0
+       max: 3000
+       packages:
+        - 500 
+        - 1000
+        - 2000
+        - 3000
+    -  name: "Jewelry"
+       code: "JEWELRY"
+       risk: 0.05
+       min: 500
+       max: 10000
+       packages:
+        - 500 
+        - 1000
+        - 2000
+        - 3000
+        - 5000
+        - 10000
+    -  name: "Electronics"
+       code: "ElECTRONICS"
+       risk: 0.35
+       min: 500
+       max: 6000
+       packages:
+        - 500 
+        - 1000
+        - 2000
+        - 3000
+        - 5000
+        - 6000      
+    -  name: "Sports Equipment"
+       code: "SPO-EQUIP"
+       risk: 0.35
+       min: 0
+       max: 20000
+       packages:
+        - 500 
+        - 1000
+        - 2000
+        - 3000
+        - 5000
+        - 6000
+        - 10000
+        - 20000     

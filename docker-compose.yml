@@ -1,0 +1,27 @@
+version: '3.5'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: web
+    networks:
+      ia-net:
+       ipv4_address: 173.20.0.3
+    container_name: web 
+    hostname: web.element.in
+    command :
+      - "/bin/bash"
+      - "-c"
+      - "service app_service start"
+    ports:
+    - "8080:8080"
+    #volumes:
+    #- "${HOME}/extconfig:/opt/app/"
+networks:
+  ia-net:
+    name: element.in
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 173.20.0.0/16  
